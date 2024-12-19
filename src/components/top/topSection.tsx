@@ -1,5 +1,6 @@
 import { inter, limeLight } from "@/app/layout";
 import React from "react";
+import { TopLinkButton } from "./parts/topLinkButton";
 
 export const TopSection: React.FC = () => {
   return (
@@ -16,6 +17,18 @@ export const TopSection: React.FC = () => {
         >
           松藤利空ポートフォリオサイト
         </p>
+        <div className="flex flex-col md:flex-row gap-4 mt-[30px]">
+          <TopLinkButton
+            label="仮置き(成果物DLページ予定)"
+            url="https://twitter.com/"
+            className="bg-black text-text-main"
+          />
+          <TopLinkButton
+            label="仮置き(シアターページ予定)"
+            url="https://youtube.com/"
+            className="bg-white text-black"
+          />
+        </div>
       </div>
     </div>
   );
