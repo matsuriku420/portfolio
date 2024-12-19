@@ -1,5 +1,11 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import {
+  Geist,
+  Geist_Mono,
+  Inter,
+  Limelight,
+  Noto_Sans_JP,
+} from "next/font/google";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -10,6 +16,27 @@ const geistSans = Geist({
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+});
+
+export const limeLight = Limelight({
+  variable: "--font-lime-light400",
+  weight: "400",
+  subsets: ["latin"],
+  display: "swap",
+});
+
+export const inter = Inter({
+  variable: "--font-inter500",
+  weight: "500",
+  subsets: ["latin"],
+  display: "swap",
+});
+
+export const notoSansJP = Noto_Sans_JP({
+  variable: "--font-noto-sans-jp500",
+  weight: "500",
+  subsets: ["latin"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {
