@@ -26,10 +26,10 @@ export default {
     function ({ addBase }: PluginAPI) {
       addBase({
         ":root": {
-          "--color-primary": "#2562FF",
+          "--color-primary": "#00B2FF",
           "--color-secondary": colors.white,
           "--color-text-main": colors.white,
-          "--color-text-sub": "#00B2FF",
+          "--color-text-sub": "#2562FF",
         },
       });
     },
