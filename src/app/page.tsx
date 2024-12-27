@@ -3,7 +3,7 @@ import { TopSection } from "@/components/top/topSection";
 
 export default function Home() {
   return (
-    <div className="bg-secondary">
+    <div className="bg-primary">
       <TopSection />
       <ProfileSection />
     </div>
