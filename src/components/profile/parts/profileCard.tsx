@@ -6,7 +6,7 @@ export const ProfileCard: React.FC<{ className?: string }> = (props) => {
   const nameTextClassBase = `${inter.className} font-extrabold text-tertiary sm:text-secondary`;
   const description = `和歌山高専電気情報工学科4年。\n
 相方との2人で開発を行うことが多く、自分はプログラム全てを担当する。\n
-2023年度学内コンテストにて最優秀賞を取得。\n
+2023年度学内コンテストにて最優秀賞を受賞。\n
 幼少期よりモノづくりが好きで、一生モノ作りする運命にあると思っている。`;
   return (
     <div
