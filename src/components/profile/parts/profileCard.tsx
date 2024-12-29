@@ -34,7 +34,7 @@ export const ProfileCard: React.FC<{ className?: string }> = (props) => {
             />
           </div>
         </div>
-        <div className="flex flex-col items-center sm:items-start">
+        <div className="flex flex-col items-center sm:items-start mx-10">
           <div className="flex flex-col sm:flex-row sm:gap-3 items-center sm:items-end p-2 h-fit w-fit sm:pr-20 sm:bg-tertiary">
             <p className={`text-2xl sm:text-4xl ${nameTextClassBase}`}>
               松藤利空

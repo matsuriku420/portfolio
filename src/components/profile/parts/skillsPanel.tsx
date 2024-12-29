@@ -1,9 +1,14 @@
+"use client";
+
 import { inter } from "@/app/layout";
-import React from "react";
+import React, { useState, useRef } from "react";
 import { SkillCard } from "./skillCard";
+import { OtherSkillsPanel } from "./otherSkillsPanel";
 
 export const SkillsPanel: React.FC<{ className?: string }> = (props) => {
   const skillIconSize = 180;
+  const [isOpen, setIsOpen] = useState(false);
+  const otherSkillsRef = useRef<HTMLDivElement>(null);
 
   return (
     <div
@@ -32,8 +37,44 @@ export const SkillsPanel: React.FC<{ className?: string }> = (props) => {
           label="React"
           star={2}
           starMax={5}
-          text="インターンで習得"
+          text={`インターンで習得\nこのサイトもReactで制作`}
         />
+      </div>
+      <div className="relative w-full flex flex-row gap-2 items-center mb-2">
+        <button
+          onClick={() => setIsOpen(!isOpen)}
+          className="flex flex-row gap-2 items-center ml-8"
+        >
+          <p
+            className={`text-secondary ${inter.className} font-medium text-2xl`}
+          >
+            Other Skills
+          </p>
+          <p
+            className={`bg-secondary rounded-full text-tertiary size-6 text-base text-center ${
+              isOpen ? "-rotate-90" : "rotate-0"
+            } transition-all duration-300`}
+          >
+            ▼
+          </p>
+        </button>
+        <div
+          className={`flex-grow mr-6 rounded-full h-1 bg-secondary ${
+            isOpen ? "max-w-full" : "max-w-0"
+          } transition-all duration-300`}
+        />
+      </div>
+      <div
+        className="ml-8 sm:mx-auto transition-all duration-300 overflow-hidden"
+        style={{
+          maxHeight: isOpen
+            ? `${otherSkillsRef.current?.scrollHeight}px`
+            : "0px",
+        }}
+      >
+        <div ref={otherSkillsRef}>
+          <OtherSkillsPanel className="pb-12" />
+        </div>
       </div>
     </div>
   );
