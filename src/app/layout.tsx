@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+//import type { Metadata } from "next";
 import {
   Geist,
   Geist_Mono,
@@ -39,10 +39,13 @@ export const notoSansJP = Noto_Sans_JP({
   display: "swap",
 });
 
-export const metadata: Metadata = {
-  title: "Matsuriku Portfolio",
-  description: "this is the greatest portfolio",
-};
+const title = "Matsuriku Portfolio";
+const description = "this is the greatest portfolio";
+
+// export const metadata: Metadata = {
+//   title: "Matsuriku Portfolio",
+//   description: "this is the greatest portfolio",
+// };
 
 export default function RootLayout({
   children,
@@ -51,6 +54,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <title>{title}</title>
+      <meta name="description" content={description} />{" "}
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
