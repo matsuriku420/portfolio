@@ -1,11 +1,11 @@
-import { NewsSection } from "@/components/news/newsSection";
+import { ProfileSection } from "@/components/profile/profileSection";
 import { TopSection } from "@/components/top/topSection";
 
 export default function Home() {
   return (
-    <div className="bg-secondary">
+    <div className="bg-primary">
       <TopSection />
-      <NewsSection />
+      <ProfileSection />
     </div>
   );
 }

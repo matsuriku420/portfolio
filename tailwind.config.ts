@@ -15,6 +15,7 @@ export default {
         foreground: "var(--foreground)",
         primary: "var(--color-primary)",
         secondary: "var(--color-secondary)",
+        tertiary: "var(--color-tertiary)",
         text: {
           main: "var(--color-text-main)",
           sub: "var(--color-text-sub)",
@@ -28,8 +29,9 @@ export default {
         ":root": {
           "--color-primary": "#00B2FF",
           "--color-secondary": colors.white,
+          "--color-tertiary": "#2562FF",
           "--color-text-main": colors.white,
-          "--color-text-sub": "#2562FF",
+          "--color-text-sub": "#00B2FF",
         },
       });
     },
