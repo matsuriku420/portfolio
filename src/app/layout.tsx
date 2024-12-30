@@ -55,7 +55,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <title>{title}</title>
-      <meta name="description" content={description} />{" "}
+      <meta name="description" content={description} />
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
