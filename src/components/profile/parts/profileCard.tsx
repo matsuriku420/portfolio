@@ -1,5 +1,5 @@
 import { inter } from "@/app/layout";
-import Image from "next/image";
+import { profileProps, rikuPhotoProps, RImage } from "@/datas/imageComponents";
 import React from "react";
 
 export const ProfileCard: React.FC<{ className?: string }> = (props) => {
@@ -12,26 +12,14 @@ export const ProfileCard: React.FC<{ className?: string }> = (props) => {
     <div
       className={`flex flex-col sm:gap-9 size-fit items-center ${props.className}`}
     >
-      <Image
-        src={"/images/profile.png"}
-        alt="profile"
-        width={373}
-        height={62}
-        className="scale-75 sm:scale-100"
-      />
+      <RImage data={profileProps} className="scale-75 sm:scale-100" />
       <div className="flex flex-col sm:flex-row h-fit sm:gap-9">
         <div className="flex flex-col items-center">
           <p className={`text-primary ${inter.className} font-semibold`}>
             \Hello world!!/
           </p>
           <div className="size-[143px]">
-            <Image
-              src={"/images/rikuPhoto.png"}
-              alt="写真"
-              width={143}
-              height={143}
-              className="rounded-full"
-            />
+            <RImage data={rikuPhotoProps} className="rounded-full" />
           </div>
         </div>
         <div className="flex flex-col items-center sm:items-start mx-10">
