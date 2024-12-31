@@ -43,3 +43,17 @@ export const rikuPhotoProps: RImageDatas = {
   height: 143,
   width: 143,
 };
+
+export const cloudBottomProps: RImageDatas = {
+  src: "/images/cloudBottom.png",
+  alt: "cloudBottom",
+  height: 230,
+  width: 2880,
+};
+
+export const worksProps: RImageDatas = {
+  src: "/images/works.png",
+  alt: "works",
+  height: 124,
+  width: 706,
+};
