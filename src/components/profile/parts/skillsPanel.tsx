@@ -4,9 +4,9 @@ import { inter } from "@/app/layout";
 import React, { useState, useRef } from "react";
 import { SkillCard } from "./skillCard";
 import { OtherSkillsPanel } from "./otherSkillsPanel";
+import { mainSkills } from "@/datas/skillProps";
 
 export const SkillsPanel: React.FC<{ className?: string }> = (props) => {
-  const skillIconSize = 180;
   const [isOpen, setIsOpen] = useState(false);
   const otherSkillsRef = useRef<HTMLDivElement>(null);
 
@@ -23,22 +23,9 @@ export const SkillsPanel: React.FC<{ className?: string }> = (props) => {
         </p>
       </div>
       <div className="flex flex-col sm:flex-row sm:gap-[100px] md:gap-[200px] sm:mx-auto mb-11 ">
-        <SkillCard
-          img="csharp.png"
-          imgSize={skillIconSize}
-          label="C#"
-          star={4}
-          starMax={5}
-          text="Unityは相棒"
-        />
-        <SkillCard
-          img="react.png"
-          imgSize={skillIconSize}
-          label="React"
-          star={2}
-          starMax={5}
-          text={`インターンで習得\nこのサイトもReactで制作`}
-        />
+        {mainSkills.map((skill, index) => (
+          <SkillCard data={skill} key={index} />
+        ))}
       </div>
       <div className="relative w-full flex flex-row gap-2 items-center mb-2">
         <button

@@ -1,7 +1,7 @@
 import { inter, notoSansJP } from "@/app/layout";
 import Image from "next/image";
 
-type skillProps = {
+export type skillProps = {
   img?: string;
   imgSize?: number;
   label: string;
@@ -10,23 +10,23 @@ type skillProps = {
   text: string;
 };
 
-export const SkillCard: React.FC<skillProps> = (props) => {
+export const SkillCard: React.FC<{ data: skillProps }> = ({ data }) => {
   let stars = "";
 
-  for (let i = 0; i < props.starMax; i++) {
-    stars += i < props.star ? "★" : "☆";
+  for (let i = 0; i < data.starMax; i++) {
+    stars += i < data.star ? "★" : "☆";
   }
 
-  const imagePath = `/images/${props.img}`;
+  const imagePath = `/images/${data.img}`;
 
   return (
     <div className="flex flex-row sm:flex-col gap-2 items-center h-fit -mb-6 sm:-mb-0">
-      {props.img ? (
+      {data.img ? (
         <Image
           src={imagePath}
-          alt={props.img ?? ""}
-          height={props.imgSize}
-          width={props.imgSize}
+          alt={data.img ?? ""}
+          height={data.imgSize}
+          width={data.imgSize}
           className="scale-75 sm:scale-100"
         />
       ) : (
@@ -34,24 +34,24 @@ export const SkillCard: React.FC<skillProps> = (props) => {
       )}
       <div
         className={`flex ${
-          props.img ? "flex-col sm:gap-2 sm:items-center" : "flex-row gap-6"
+          data.img ? "flex-col sm:gap-2 sm:items-center" : "flex-row gap-6"
         } items-start`}
       >
         <div
           className={`flex flex-col items-start ${
-            props.img ? "sm:items-center" : ""
+            data.img ? "sm:items-center" : ""
           }`}
         >
           <p
             className={`${inter.className} font-semibold text-3xl ${
-              props.img ? "sm:text-4xl" : ""
+              data.img ? "sm:text-4xl" : ""
             } text-secondary leading-7`}
           >
-            {props.label}
+            {data.label}
           </p>
           <p
             className={`${notoSansJP.className} font-bold ${
-              props.img ? "text-2xl sm:text-4xl" : "text-2xl"
+              data.img ? "text-2xl sm:text-4xl" : "text-2xl"
             } text-secondary`}
           >
             {stars}
@@ -61,10 +61,10 @@ export const SkillCard: React.FC<skillProps> = (props) => {
           className={`${
             inter.className
           } font-semibold text-xl text-secondary whitespace-pre-wrap ${
-            props.img ? "sm:text-center" : ""
+            data.img ? "sm:text-center" : ""
           }`}
         >
-          {props.text}
+          {data.text}
         </p>
       </div>
     </div>
