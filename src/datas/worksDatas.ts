@@ -7,7 +7,7 @@ export type WorksProps = {
   comment: string;
 };
 
-export const bbProps: WorksProps = {
+const bbProps: WorksProps = {
   title: "Block/Breaker",
   description: `チーム開発１作目\n
 2022学内コンテスト入賞\n
@@ -22,7 +22,7 @@ export const bbProps: WorksProps = {
 プログラミング以外にも機体デザイン(1つ)や性能考察(複数体)にも参加。`,
 };
 
-export const ssProps: WorksProps = {
+const ssProps: WorksProps = {
   title: "セツナスラッシュ",
   description: `チーム開発２作目\n
 2023学内コンテスト入賞\n
@@ -37,7 +37,7 @@ export const ssProps: WorksProps = {
 ステージを全て制作してくれる相方の頑張りに応えられるよう奮闘した。`,
 };
 
-export const rrlProps: WorksProps = {
+const rrlProps: WorksProps = {
   title: "リク式アプリランチャー",
   description: `2022年に授業の自由制作課題で個人製作\n
 exeファイル等を登録できるランチャーアプリ\n
@@ -51,3 +51,5 @@ csvファイルを扱ったのはこれが初めて\n
   comment: `VisualStudioを用いC#で制作したが自分との相性が悪いのか作業しづらかった。
 バグも残っているのでいつかReactNativeやMAUIなどでリメイクしてみたい。`,
 };
+
+export const myWorks: WorksProps[] = [bbProps, ssProps, rrlProps];

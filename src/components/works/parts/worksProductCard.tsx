@@ -10,8 +10,8 @@ export const ProductCard: React.FC<{
   const textClassBase = `${inter.className} text-secondary font-semibold`;
 
   return (
-    <div className={`${className} w-fit h-fit`}>
-      <div className="flex flex-col gap-3 w-fit max-w-[900px] lg:w-[900px] h-[750px] lg:h-[550px] items-center lg:items-start px-3">
+    <div className={`${className} size-full`}>
+      <div className="flex flex-col gap-3 w-full max-w-[900px] lg:w-[900px] h-fit max-h-[750px] lg:h-[550px] items-center lg:items-start">
         <div className="flex flex-col gap-1 size-fit">
           <p className={`${textClassBase} text-3xl lg:text-4xl mr-8`}>
             {data.title}
@@ -25,7 +25,7 @@ export const ProductCard: React.FC<{
             {data.description}
           </p>
           <div className="lg:ml-auto">
-            <p className="bg-secondary flex-shrink-0 w-[448px] h-[252px] mb-1">
+            <p className="bg-secondary aspect-video w-[64vw] max-w-[450px] mb-1 mt-2">
               {data.video_url}
             </p>
             <p

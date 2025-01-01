@@ -1,8 +1,8 @@
 import { inter } from "@/app/layout";
 import { cloudBottomProps, RImage, worksProps } from "@/datas/imageComponents";
 import React from "react";
-import { ProductCard } from "./parts/worksProductCard";
-import { ssProps } from "@/datas/worksDatas";
+import { ProductCardCarousel } from "./parts/worksProductCardCarousel";
+import { myWorks } from "@/datas/worksDatas";
 
 export const WorksSection: React.FC = () => {
   return (
@@ -16,7 +16,7 @@ export const WorksSection: React.FC = () => {
         </p>
       </div>
       <RImage data={cloudBottomProps} className="w-full" />
-      <ProductCard data={ssProps} className="translate-x-0 transition-all" />
+      <ProductCardCarousel works={myWorks} className="mx-auto" />
     </div>
   );
 };
