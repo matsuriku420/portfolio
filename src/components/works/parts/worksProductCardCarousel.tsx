@@ -25,8 +25,8 @@ export const ProductCardCarousel: React.FC<props> = (props) => {
         {props.works.map((work, index) => (
           <div
             key={index}
-            className={`size-full transition-all ${
-              index != page ? "scale-75 pointer-events-none opacity-70" : ""
+            className={`grid grid-cols-1 grid-rows-1 size-full transition-all ${
+              index != page ? "scale-75 opacity-70" : ""
             }`}
             style={{
               transitionDuration: `${transitionDuration}ms`,
@@ -35,7 +35,16 @@ export const ProductCardCarousel: React.FC<props> = (props) => {
               gridRowStart: 1,
             }}
           >
-            <ProductCard data={work} className="mx-auto" />
+            <ProductCard
+              data={work}
+              className="mx-auto row-start-1 col-start-1 "
+            />
+            <button
+              onClick={() => SetPageCount(index)}
+              className={`row-start-1 col-start-1 size-full ${
+                index != page ? " visible" : " hidden"
+              }`}
+            />
           </div>
         ))}
       </div>
