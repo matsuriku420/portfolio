@@ -8,16 +8,17 @@ type RImageDatas = {
   width: number;
 };
 
-export const RImage: React.FC<{ data: RImageDatas; className?: string }> = ({
-  data,
-  className,
-}) => {
+export const RImage: React.FC<{
+  data: RImageDatas;
+  scale?: number;
+  className?: string;
+}> = ({ data, scale = 1, className }) => {
   return (
     <Image
       src={data.src}
       alt={data.alt}
-      width={data.width}
-      height={data.height}
+      width={data.width * scale}
+      height={data.height * scale}
       className={className}
     />
   );
@@ -56,4 +57,11 @@ export const worksProps: RImageDatas = {
   alt: "works",
   height: 124,
   width: 706,
+};
+
+export const triangleProps: RImageDatas = {
+  src: "/images/triangle.png",
+  alt: "triangle",
+  height: 172,
+  width: 118,
 };
