@@ -30,7 +30,7 @@ export const ProfileCard: React.FC<{ className?: string }> = (props) => {
           </div>
           <div className="size-fit p-3">
             <p
-              className={`${inter.className} text-text-sub font-semibold text-[15px] sm:text-[20px] leading-4 sm:leading-5 whitespace-pre-wrap`}
+              className={`${inter.className} text-primary font-semibold text-[15px] sm:text-[20px] leading-4 sm:leading-5 whitespace-pre-wrap`}
             >
               {myProfile.description}
             </p>

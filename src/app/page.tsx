@@ -4,7 +4,7 @@ import { WorksSection } from "@/components/works/worksSection";
 
 export default function Home() {
   return (
-    <div className="bg-primary">
+    <div className="bg-background">
       <TopSection />
       <ProfileSection />
       <WorksSection />
