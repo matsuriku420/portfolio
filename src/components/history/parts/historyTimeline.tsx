@@ -1,5 +1,6 @@
 import { inter } from "@/app/layout";
 import { rikuHistories } from "@/datas/HistoryDatas";
+import { RImage } from "@/datas/imageComponents";
 import React from "react";
 
 export const Timeline: React.FC = () => {
@@ -48,6 +49,11 @@ export const Timeline: React.FC = () => {
               >
                 {data.label}
               </p>
+              <div
+                className={`flex h-72 aspect-video ${data.img ? "" : "hidden"}`}
+              >
+                <RImage data={data.img} />
+              </div>
             </div>
           ))}
         </div>

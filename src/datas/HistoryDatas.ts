@@ -1,4 +1,4 @@
-import { RImageDatas } from "./imageComponents";
+import { /*hitsumabushiProps,*/ RImageDatas } from "./imageComponents";
 
 type HistoryProps = {
   time: string;
@@ -24,6 +24,7 @@ export const rikuHistories: HistoryProps[] = [
     time: "高専１年",
     attribute: "mid",
     label: `Unityにて初のオリジナルゲーム制作\nスタートは2Dの弾幕対戦ゲームとなった`,
+    //img: hitsumabushiProps,
   },
   {
     time: "高専２年",
