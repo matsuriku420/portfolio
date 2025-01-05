@@ -5,7 +5,7 @@ import { Timeline } from "./parts/historyTimeline";
 
 export const HistorySection: React.FC = () => {
   return (
-    <div className="flex flex-col items-center mt-[100px]">
+    <div className="flex flex-col items-center gap-6 mt-[100px]">
       <div className="flex flex-col items-center gap-6">
         <RImage data={historyProps} scale={0.5} />
         <p

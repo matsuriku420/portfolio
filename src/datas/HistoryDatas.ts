@@ -16,7 +16,7 @@ export const rikuHistories: HistoryProps[] = [
   },
   { time: "中学生", attribute: "mid", label: "Scratchでゲーム作りに触れる" },
   {
-    time: "2021",
+    time: "2021年",
     attribute: "big",
     label: "高専入学、Unityとの出会いを果たす",
   },
@@ -38,7 +38,12 @@ export const rikuHistories: HistoryProps[] = [
   {
     time: "2023年秋",
     attribute: "mid",
-    label: `高専祭にてクラス企画であるウマ漢の動画編集班員として参加\n\nセツナスラッシュで学内プロコンにて最優秀賞、一般投票１位両受賞`,
+    label: "高専祭にてクラス企画であるウマ漢の動画編集班員として参加",
+  },
+  {
+    time: "",
+    attribute: "mid",
+    label: "セツナスラッシュで学内プロコンにて最優秀賞、一般投票１位両受賞",
   },
   {
     time: "2024年春",
