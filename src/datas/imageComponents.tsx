@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 
-type RImageDatas = {
+export type RImageDatas = {
   src: string;
   alt: string;
   height: number;
@@ -64,4 +64,11 @@ export const triangleProps: RImageDatas = {
   alt: "triangle",
   height: 172,
   width: 118,
+};
+
+export const historyProps: RImageDatas = {
+  src: "/images/history.png",
+  alt: "history",
+  height: 112,
+  width: 776,
 };
