@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 
-type RImageDatas = {
+export type RImageDatas = {
   src: string;
   alt: string;
   height: number;
@@ -9,10 +9,11 @@ type RImageDatas = {
 };
 
 export const RImage: React.FC<{
-  data: RImageDatas;
+  data?: RImageDatas;
   scale?: number;
   className?: string;
 }> = ({ data, scale = 1, className }) => {
+  if (!data) return;
   return (
     <Image
       src={data.src}
@@ -65,3 +66,18 @@ export const triangleProps: RImageDatas = {
   height: 172,
   width: 118,
 };
+
+export const historyProps: RImageDatas = {
+  src: "/images/history.png",
+  alt: "history",
+  height: 112,
+  width: 776,
+};
+
+//レイアウトがうまくいかず未使用
+// export const hitsumabushiProps: RImageDatas = {
+//   src: "/images/hitsumabushi.png",
+//   alt: "hitsumabushi",
+//   height: 1080,
+//   width: 1920,
+// };
