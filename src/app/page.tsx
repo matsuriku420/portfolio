@@ -1,3 +1,4 @@
+import { Footer } from "@/components/footer/footerSection";
 import { HistorySection } from "@/components/history/historySection";
 import { ProfileSection } from "@/components/profile/profileSection";
 import { TopSection } from "@/components/top/topSection";
@@ -10,6 +11,9 @@ export default function Home() {
       <ProfileSection />
       <WorksSection />
       <HistorySection />
+      <div className="mt-40">
+        <Footer />
+      </div>
     </div>
   );
 }
