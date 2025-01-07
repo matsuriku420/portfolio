@@ -21,15 +21,6 @@ export default function Home() {
 
   return (
     <div className="bg-background">
-      <button
-        onClick={() => {
-          const palette = "fluffy";
-          const list = document.documentElement.classList;
-          if (list.contains(palette)) list.remove(palette);
-          else list.add(palette);
-        }}
-        className="size-56 bg-black"
-      />
       <div className="fixed top-0 w-full z-50">
         <Header indexes={indexArray} />
       </div>
