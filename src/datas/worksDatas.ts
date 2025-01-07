@@ -52,4 +52,40 @@ csvファイルを扱ったのはこれが初めて\n
 バグも残っているのでいつかReactNativeやMAUIなどでリメイクしてみたい。`,
 };
 
-export const myWorks: WorksProps[] = [bbProps, ssProps, rrlProps];
+const htProps: WorksProps = {
+  title: "ひつまぶし",
+  description: `Unityでの初制作ゲーム\n
+ストレートと拡散のみの2P対戦弾幕ゲーム\n
+クリスタルを拾うことで無敵バリア獲得\n
+バグが多いうえにUIもバランスも酷いが\n
+Unity人生の始まりとしていい思い出である
+`,
+  skills: "Unity, C#",
+  pv_url: "",
+  video_url: "",
+  comment: `タイトルの「ひつまぶし」は「ひまつぶし」をもじったもの。
+シリーズものとして第2弾も作ろうとしたが挫折した。`,
+};
+
+const poezoProps: WorksProps = {
+  title: "POEZO",
+  description: `ステージ制作可能な2Dアクションとして作った\n
+タイルマップを初めてかつ最後に触った作品\n
+左上のボタンでブロック操作モード切替\n
+ドット絵を描いたのもこれが初めてで\n
+初にしては上手くできただろうと思っている
+`,
+  skills: "Unity, C#",
+  pv_url: "",
+  video_url: "",
+  comment: `POEZOとはプレイアブルキャラクターでもある青い豆みたいな生物の名前。
+母に命名してもらった。`,
+};
+
+export const myWorks: WorksProps[] = [
+  bbProps,
+  ssProps,
+  rrlProps,
+  htProps,
+  poezoProps,
+];
