@@ -2,8 +2,8 @@ export type WorksProps = {
   title: string;
   description: string;
   skills: string;
-  pv_url: string;
-  video_url: string;
+  pv_url?: string;
+  video_path: string;
   comment: string;
 };
 
@@ -16,8 +16,8 @@ const bbProps: WorksProps = {
 個人的にもかなり気に入っている
 `,
   skills: "Unity, C#",
-  pv_url: "",
-  video_url: "",
+  pv_url: "https://youtu.be/HTCJC_ialsM",
+  video_path: "/videos/bb_video.mp4",
   comment: `人生初の本格的なゲームの製作にも関わらず納期わずか3ヶ月だったが、なんとか形にすることができた。\n
 プログラミング以外にも機体デザイン(1つ)や性能考察(複数体)にも参加。`,
 };
@@ -31,8 +31,8 @@ const ssProps: WorksProps = {
 2Dメッシュの分割システムは自信の源
 `,
   skills: "Unity, C#",
-  pv_url: "",
-  video_url: "",
+  pv_url: "https://youtu.be/X5rLojXpRVI",
+  video_path: "/videos/ss_video.mp4",
   comment: `奇抜なコンセプト故にゲーム初心者には難しい出来となってしまったが、斬るだけでも楽しい良作。
 ステージを全て制作してくれる相方の頑張りに応えられるよう奮闘した。`,
 };
@@ -47,9 +47,45 @@ csvファイルを扱ったのはこれが初めて\n
 `,
   skills: "VisualStudio, C#",
   pv_url: "",
-  video_url: "",
+  video_path: "/videos/rral_video.mp4",
   comment: `VisualStudioを用いC#で制作したが自分との相性が悪いのか作業しづらかった。
 バグも残っているのでいつかReactNativeやMAUIなどでリメイクしてみたい。`,
 };
 
-export const myWorks: WorksProps[] = [bbProps, ssProps, rrlProps];
+const htProps: WorksProps = {
+  title: "ひつまぶし",
+  description: `Unityでの初制作ゲーム\n
+ストレートと拡散のみの2P対戦弾幕ゲーム\n
+クリスタルを拾うことで無敵バリア獲得\n
+バグが多いうえにUIもバランスも酷いが\n
+Unity人生の始まりとしていい思い出である
+`,
+  skills: "Unity, C#",
+  pv_url: "",
+  video_path: "/videos/ht_video.mp4",
+  comment: `タイトルの「ひつまぶし」は「ひまつぶし」をもじったもの。
+シリーズものとして第2弾も作ろうとしたが挫折した。`,
+};
+
+const poezoProps: WorksProps = {
+  title: "POEZO",
+  description: `ステージ制作可能な2Dアクションとして作った\n
+タイルマップを初めてかつ最後に触った作品\n
+左上のボタンでブロック操作モード切替\n
+ドット絵を描いたのもこれが初めてで\n
+初にしては上手くできただろうと思っている
+`,
+  skills: "Unity, C#",
+  pv_url: "",
+  video_path: "/videos/poezo_video.mp4",
+  comment: `POEZOとはプレイアブルキャラクターでもある青い豆みたいな生物の名前。
+母に命名してもらった。`,
+};
+
+export const myWorks: WorksProps[] = [
+  bbProps,
+  ssProps,
+  rrlProps,
+  htProps,
+  poezoProps,
+];

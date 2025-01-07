@@ -1,7 +1,13 @@
 "use client";
 
 import { WorksProps } from "@/datas/worksDatas";
-import React, { useState } from "react";
+import React, {
+  createRef,
+  RefObject,
+  useEffect,
+  useRef,
+  useState,
+} from "react";
 import { ProductCard } from "./worksProductCard";
 import { RImage, triangleProps } from "@/datas/imageComponents";
 
@@ -16,6 +22,23 @@ export const ProductCardCarousel: React.FC<props> = (props) => {
   const buttonClassName = "flex size-14 lg:size-fit transition-all";
   const buttonDisableClassName = "opacity-50 pointer-events-none";
   const buttonImageScale = 0.5;
+
+  const videoRefs = useRef<RefObject<HTMLVideoElement>[]>([]);
+  props.works.forEach((p, index) => {
+    const ref = createRef<HTMLVideoElement>();
+    if (ref != null) {
+      videoRefs.current[index] = ref as RefObject<HTMLVideoElement>;
+    }
+  });
+
+  useEffect(() => {
+    videoRefs.current.forEach((ref, index) => {
+      if (index == page) {
+        ref.current.play();
+        ref.current.currentTime = 0;
+      } else ref.current.pause();
+    });
+  }, [page]);
 
   return (
     <div
@@ -38,6 +61,7 @@ export const ProductCardCarousel: React.FC<props> = (props) => {
             <ProductCard
               data={work}
               className="mx-auto row-start-1 col-start-1 "
+              ref={videoRefs.current[index]}
             />
             <button
               onClick={() => SetPageCount(index)}
