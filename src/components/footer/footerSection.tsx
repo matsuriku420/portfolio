@@ -13,7 +13,7 @@ export const Footer: React.FC = () => {
           }`}
         >
           <button
-            className={`w-40 h-20 rounded-t-3xl bg-tertiary ${inter.className} pb-10 -mb-10 font-semibold text-secondary text-xl`}
+            className={`w-40 h-20 rounded-t-3xl bg-tertiary ${inter.className} pb-10 -mb-10 font-semibold text-text-main text-xl`}
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
             onPointerEnter={() => setSBPM(true)}
             onPointerLeave={() => setSBPM(false)}
@@ -22,7 +22,7 @@ export const Footer: React.FC = () => {
           </button>
         </div>
         <div className="relative w-full h-20 bg-tertiary">
-          <small className="text-secondary absolute bottom-1 left-2">
+          <small className="text-text-main absolute bottom-1 left-2">
             © 2025 Riku Matsufuji
           </small>
         </div>
