@@ -17,7 +17,7 @@ export const SkillsPanel: React.FC<{ className?: string }> = (props) => {
       <div className="flex flex-row">
         <div className="w-5 h-[72px] bg-primary ml-8 -mt-3" />
         <p
-          className={`${inter.className} font-extrabold text-4xl text-secondary h-fit mt-auto ml-4`}
+          className={`${inter.className} font-extrabold text-4xl text-text-main h-fit mt-auto ml-4`}
         >
           Skills
         </p>
@@ -33,7 +33,7 @@ export const SkillsPanel: React.FC<{ className?: string }> = (props) => {
           className="flex flex-row gap-2 items-center ml-8"
         >
           <p
-            className={`text-secondary ${inter.className} font-medium text-2xl`}
+            className={`text-text-main ${inter.className} font-medium text-2xl`}
           >
             Other Skills
           </p>

@@ -45,14 +45,14 @@ export const SkillCard: React.FC<{ data: skillProps }> = ({ data }) => {
           <p
             className={`${inter.className} font-semibold text-3xl ${
               data.img ? "sm:text-4xl" : ""
-            } text-secondary leading-7`}
+            } text-text-main leading-7`}
           >
             {data.label}
           </p>
           <p
             className={`${notoSansJP.className} font-bold ${
               data.img ? "text-2xl sm:text-4xl" : "text-2xl"
-            } text-secondary`}
+            } text-text-main`}
           >
             {stars}
           </p>
@@ -60,7 +60,7 @@ export const SkillCard: React.FC<{ data: skillProps }> = ({ data }) => {
         <p
           className={`${
             inter.className
-          } font-semibold text-xl text-secondary whitespace-pre-wrap ${
+          } font-semibold text-xl text-text-main whitespace-pre-wrap ${
             data.img ? "sm:text-center" : ""
           }`}
         >

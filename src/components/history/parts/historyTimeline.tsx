@@ -29,7 +29,7 @@ export const Timeline: React.FC = () => {
           {datas.map((data, index) => (
             <div key={index} className="flex flex-row items-center gap-2">
               <p
-                className={`${inter.className} font-semibold text-secondary text-base w-20 text-end flex-shrink-0`}
+                className={`${inter.className} font-semibold text-text-main text-base w-20 text-end flex-shrink-0`}
               >
                 {data.time}
               </p>
@@ -45,7 +45,7 @@ export const Timeline: React.FC = () => {
                 />
               </div>
               <p
-                className={`${inter.className} font-semibold text-lg sm:text-xl text-secondary whitespace-pre-wrap`}
+                className={`${inter.className} font-semibold text-lg sm:text-xl text-text-main whitespace-pre-wrap`}
               >
                 {data.label}
               </p>

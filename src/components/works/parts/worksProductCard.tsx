@@ -13,7 +13,7 @@ export const ProductCard = React.forwardRef(
   ) => {
     const { data, className } = props;
 
-    const textClassBase = `${inter.className} text-secondary font-semibold`;
+    const textClassBase = `${inter.className} text-text-main font-semibold`;
 
     return (
       <div className={`${className} size-full`}>
@@ -43,7 +43,7 @@ export const ProductCard = React.forwardRef(
                 <div className="size-full col-start-1 row-start-1 rounded-xl border-8 border-secondary" />
               </div>
               <p
-                className={`${inter.className} text-secondary text-xl font-semibold`}
+                className={`${inter.className} text-text-main text-xl font-semibold`}
               >
                 {`使用スキル： ${data.skills}`}
               </p>
@@ -54,7 +54,7 @@ export const ProductCard = React.forwardRef(
             <TopLinkButton
               label="PVはこちら"
               url={data.pv_url ?? ""}
-              className="bg-secondary text-black"
+              className="bg-secondary text-text-third"
             />
           ) : (
             <div className="h-[70px]" />

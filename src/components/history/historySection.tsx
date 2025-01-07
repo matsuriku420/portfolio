@@ -12,7 +12,7 @@ export const HistorySection: React.FC<{ scrollRef?: Ref<HTMLDivElement> }> = ({
         <div ref={scrollRef} className="-translate-y-16" />
         <RImage data={historyProps} scale={0.5} />
         <p
-          className={`${inter.className} font-semibold text-[32px] text-secondary`}
+          className={`${inter.className} font-semibold text-[32px] text-text-main`}
         >
           これまでの経歴を紹介
         </p>

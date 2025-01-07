@@ -11,9 +11,9 @@ export const WorksSection: React.FC<{ scrollRef?: Ref<HTMLDivElement> }> = ({
     <div className="flex flex-col items-center">
       <div className="flex flex-col sm:gap-6 bg-white items-center pt-[90px] w-full h-fit">
         <div ref={scrollRef} className="-translate-y-16" />
-        <RImage data={worksProps} className="w-[350px]" />
+        <RImage data={worksProps} className="w-[350px] bg-text-sub" />
         <p
-          className={`${inter.className} text-2xl sm:text-[32px] font-semibold text-primary`}
+          className={`${inter.className} text-2xl sm:text-[32px] font-semibold text-text-sub`}
         >
           高専４年間での制作物紹介
         </p>
