@@ -2,7 +2,7 @@ export type WorksProps = {
   title: string;
   description: string;
   skills: string;
-  pv_url: string;
+  pv_url?: string;
   video_url: string;
   comment: string;
 };
@@ -16,7 +16,7 @@ const bbProps: WorksProps = {
 個人的にもかなり気に入っている
 `,
   skills: "Unity, C#",
-  pv_url: "",
+  pv_url: "https://youtu.be/HTCJC_ialsM",
   video_url: "",
   comment: `人生初の本格的なゲームの製作にも関わらず納期わずか3ヶ月だったが、なんとか形にすることができた。\n
 プログラミング以外にも機体デザイン(1つ)や性能考察(複数体)にも参加。`,
@@ -31,7 +31,7 @@ const ssProps: WorksProps = {
 2Dメッシュの分割システムは自信の源
 `,
   skills: "Unity, C#",
-  pv_url: "",
+  pv_url: "https://youtu.be/X5rLojXpRVI",
   video_url: "",
   comment: `奇抜なコンセプト故にゲーム初心者には難しい出来となってしまったが、斬るだけでも楽しい良作。
 ステージを全て制作してくれる相方の頑張りに応えられるよう奮闘した。`,

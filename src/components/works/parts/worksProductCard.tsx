@@ -36,11 +36,15 @@ export const ProductCard: React.FC<{
             <div className="h-1 w-full rounded-full bg-secondary" />
           </div>
         </div>
-        <TopLinkButton
-          label="PVはこちら"
-          url={data.pv_url}
-          className="bg-secondary"
-        />
+        {data.pv_url ? (
+          <TopLinkButton
+            label="PVはこちら"
+            url={data.pv_url ?? ""}
+            className="bg-secondary text-black"
+          />
+        ) : (
+          <div className="h-[70px]" />
+        )}
         <div className="h-1 w-full rounded-full bg-secondary" />
         <p className={`${textClassBase} text-lg leading-5 whitespace-pre-wrap`}>
           {data.comment}
