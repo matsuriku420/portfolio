@@ -14,8 +14,8 @@ export const HeaderMenu: React.FC<{ open: boolean }> = ({ open }) => {
     <div className="size-fit">
       <div
         className={`bg-tertiary w-fit h-fit pb-12 sm:pb-24 rounded-3xl border-secondary border-4 ${
-          open ? "translate-y-0" : "-translate-y-[120%]"
-        } transition-all duration-700 ease-in-out`}
+          open ? "translate-y-[104%]" : "translate-y-0"
+        } transition-all duration-700 ease-out`}
       >
         <div className="flex flex-col gap-3 sm:gap-5 p-5">
           {palettes.map((palette, index) => (

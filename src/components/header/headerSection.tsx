@@ -50,7 +50,7 @@ export const Header: React.FC<{ indexes: IndexItemProp[] }> = ({ indexes }) => {
         </button>
       </div>
       <div className="relative">
-        <div className="absolute right-3 top-3 -z-10">
+        <div className="absolute right-3 bottom-1 -z-10">
           <HeaderMenu open={menuOpen} />
         </div>
       </div>
