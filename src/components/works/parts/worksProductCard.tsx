@@ -1,3 +1,4 @@
+import { BASE_PATH } from "@/app/layout";
 import { TopLinkButton } from "@/components/top/parts/topLinkButton";
 import { WorksProps } from "@/datas/worksDatas";
 import React from "react";
@@ -32,7 +33,7 @@ export const ProductCard = React.forwardRef(
             <div className="lg:ml-auto">
               <div className="grid grid-cols-1 grid-rows-1 aspect-video w-[64vw] max-w-[450px] mb-1 mt-2">
                 <video
-                  src={data.video_path}
+                  src={`${BASE_PATH}${data.video_path}`}
                   ref={videoRef}
                   autoPlay
                   muted

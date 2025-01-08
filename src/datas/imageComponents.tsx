@@ -1,7 +1,6 @@
+import { BASE_PATH } from "@/app/layout";
 import Image from "next/image";
 import React from "react";
-import config from "../../next.config";
-const BASE_PATH = config.basePath ?? "";
 
 export type RImageDatas = {
   src: string;

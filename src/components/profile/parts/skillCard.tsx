@@ -1,3 +1,4 @@
+import { BASE_PATH } from "@/app/layout";
 import Image from "next/image";
 
 export type skillProps = {
@@ -22,7 +23,7 @@ export const SkillCard: React.FC<{ data: skillProps }> = ({ data }) => {
     <div className="flex flex-row sm:flex-col gap-2 items-center h-fit -mb-6 sm:-mb-0">
       {data.img ? (
         <Image
-          src={imagePath}
+          src={`${BASE_PATH}${imagePath}`}
           alt={data.img ?? ""}
           height={data.imgSize}
           width={data.imgSize}

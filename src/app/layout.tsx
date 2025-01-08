@@ -42,6 +42,9 @@ const notoSansJP = Noto_Sans_JP({
 const title = "Matsuriku Portfolio";
 const description = "this is the greatest portfolio";
 
+import config from "@/../next.config";
+export const BASE_PATH = config.basePath ?? "";
+
 // export const metadata: Metadata = {
 //   title: "Matsuriku Portfolio",
 //   description: "this is the greatest portfolio",
