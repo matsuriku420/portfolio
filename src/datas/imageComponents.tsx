@@ -21,7 +21,7 @@ export const RImage: React.FC<{
       alt={data.alt}
       width={data.width * scale}
       height={data.height * scale}
-      className={className}
+      className={`${className} transition-all duration-500 ease-in-out`}
     />
   );
 };

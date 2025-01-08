@@ -52,7 +52,7 @@ export default {
           "--color-text-sub": "#00B2FF",
           "--color-text-third": "#00B2FF",
         },
-        ".cafe": {
+        ".cocoa": {
           "--color-background": "#DDCFB6",
           "--color-primary": "#A69986",
           "--color-secondary": "#FFFFFF",

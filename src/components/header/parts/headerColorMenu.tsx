@@ -1,7 +1,7 @@
 import React from "react";
 
 export const HeaderMenu: React.FC<{ open: boolean }> = ({ open }) => {
-  const palettes: string[] = ["default", "fluffy", "cafe"];
+  const palettes: string[] = ["default", "fluffy", "cocoa"];
 
   const SetPalette = (palette: string) => {
     const root = document.documentElement;
@@ -29,7 +29,7 @@ export const HeaderMenu: React.FC<{ open: boolean }> = ({ open }) => {
                 />
               </div>
               <p
-                className={`text-text-main font-semibold text-xl sm:text-2xl   hover:translate-y-1 transition-all`}
+                className={`text-text-main font-semibold text-xl sm:text-2xl cursor-pointer hover:translate-y-1 transition-all`}
                 onClick={() => SetPalette(palette)}
               >
                 {palette}
