@@ -1,4 +1,3 @@
-import { notoSansJP } from "@/app/layout";
 import React from "react";
 
 type topLinkB_props = {
@@ -12,7 +11,7 @@ export const TopLinkButton: React.FC<topLinkB_props> = (props) => {
     <div>
       <a
         href={props.url}
-        className={`${props.className} ${notoSansJP.className} inline-flex flex-row gap-[18px] items-center text-base md:text-xl pl-7 pr-7 md:pr-10 h-[70px] w-fit rounded-full`}
+        className={`${props.className}  font-noto inline-flex flex-row gap-[18px] items-center text-base md:text-xl pl-7 pr-7 md:pr-10 h-[70px] w-fit rounded-full`}
       >
         <div className="size-4 rounded-full bg-background flex-shrink-0" />
         {props.label}

@@ -1,4 +1,3 @@
-import { inter } from "@/app/layout";
 import React from "react";
 
 export const HeaderMenu: React.FC<{ open: boolean }> = ({ open }) => {
@@ -30,7 +29,7 @@ export const HeaderMenu: React.FC<{ open: boolean }> = ({ open }) => {
                 />
               </div>
               <p
-                className={`text-text-main font-semibold text-xl sm:text-2xl ${inter.className} hover:translate-y-1 transition-all`}
+                className={`text-text-main font-semibold text-xl sm:text-2xl   hover:translate-y-1 transition-all`}
                 onClick={() => SetPalette(palette)}
               >
                 {palette}

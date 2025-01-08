@@ -1,4 +1,3 @@
-import { inter, notoSansJP } from "@/app/layout";
 import Image from "next/image";
 
 export type skillProps = {
@@ -43,14 +42,14 @@ export const SkillCard: React.FC<{ data: skillProps }> = ({ data }) => {
           }`}
         >
           <p
-            className={`${inter.className} font-semibold text-3xl ${
+            className={`  font-semibold text-3xl ${
               data.img ? "sm:text-4xl" : ""
             } text-text-main leading-7`}
           >
             {data.label}
           </p>
           <p
-            className={`${notoSansJP.className} font-bold ${
+            className={` font-noto font-bold ${
               data.img ? "text-2xl sm:text-4xl" : "text-2xl"
             } text-text-main`}
           >
@@ -58,9 +57,7 @@ export const SkillCard: React.FC<{ data: skillProps }> = ({ data }) => {
           </p>
         </div>
         <p
-          className={`${
-            inter.className
-          } font-semibold text-xl text-text-main whitespace-pre-wrap ${
+          className={`font-semibold text-xl text-text-main whitespace-pre-wrap ${
             data.img ? "sm:text-center" : ""
           }`}
         >

@@ -1,4 +1,3 @@
-import { inter } from "@/app/layout";
 import { rikuHistories } from "@/datas/HistoryDatas";
 import { RImage } from "@/datas/imageComponents";
 import React from "react";
@@ -29,7 +28,7 @@ export const Timeline: React.FC = () => {
           {datas.map((data, index) => (
             <div key={index} className="flex flex-row items-center gap-2">
               <p
-                className={`${inter.className} font-semibold text-text-main text-base w-20 text-end flex-shrink-0`}
+                className={`  font-semibold text-text-main text-base w-20 text-end flex-shrink-0`}
               >
                 {data.time}
               </p>
@@ -45,7 +44,7 @@ export const Timeline: React.FC = () => {
                 />
               </div>
               <p
-                className={`${inter.className} font-semibold text-lg sm:text-xl text-text-main whitespace-pre-wrap`}
+                className={`  font-semibold text-lg sm:text-xl text-text-main whitespace-pre-wrap`}
               >
                 {data.label}
               </p>

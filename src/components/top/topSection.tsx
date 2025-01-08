@@ -1,4 +1,3 @@
-import { inter, limeLight } from "@/app/layout";
 import React from "react";
 import { TopLinkButton } from "./parts/topLinkButton";
 
@@ -7,13 +6,13 @@ export const TopSection: React.FC = () => {
     <div className="h-fit w-full">
       <div className="flex flex-col max-w-fit mx-auto px-2 lg:ml-[120px] pt-[232px]">
         <p
-          className={`${limeLight.className} text-text-main text-[12vw] md:text-8xl mr-[120px] leading-[12vw] md:leading-[112px] whitespace-pre-wrap`}
+          className={`font-limeLight  text-text-main text-[12vw] md:text-8xl mr-[120px] leading-[12vw] md:leading-[112px] whitespace-pre-wrap`}
         >
           {`Riku's\nPortfolioSite`}
         </p>
         <div className="h-[1px] bg-text-main w-full mb-[5px]" />
         <p
-          className={`${inter.className} text-text-main font-medium text-[4vw] md:text-[32px] md:leading-[37px]`}
+          className={`  text-text-main font-medium text-[4vw] md:text-[32px] md:leading-[37px]`}
         >
           松藤利空ポートフォリオサイト
         </p>

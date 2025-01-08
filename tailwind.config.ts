@@ -22,6 +22,11 @@ export default {
           third: "var(--color-text-third)",
         },
       },
+      fontFamily: {
+        inter: "var(--font-inter500)",
+        limeLight: "var(--font-lime-light400)",
+        noto: "var(--font-noto-sans-jp500)",
+      },
     },
   },
   plugins: [

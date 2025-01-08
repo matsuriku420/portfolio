@@ -1,6 +1,6 @@
 import React from "react";
 import { SkillCard } from "./skillCard";
-import { inter } from "@/app/layout";
+
 import {
   programmingSkills,
   toolSkills,
@@ -31,7 +31,7 @@ export const OtherSkillsPanel: React.FC<{ className?: string }> = (props) => {
 const Label: React.FC<{ text: string }> = ({ text }) => {
   return (
     <p
-      className={`col-span-full -ml-6 -mb-8 sm:mb-0 sm:mt-5 text-3xl ${inter.className} font-bold text-text-main`}
+      className={`col-span-full -ml-6 -mb-8 sm:mb-0 sm:mt-5 text-3xl   font-bold text-text-main`}
     >
       {text}
     </p>

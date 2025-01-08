@@ -1,4 +1,3 @@
-import { inter } from "@/app/layout";
 import { TopLinkButton } from "@/components/top/parts/topLinkButton";
 import { WorksProps } from "@/datas/worksDatas";
 import React from "react";
@@ -13,7 +12,7 @@ export const ProductCard = React.forwardRef(
   ) => {
     const { data, className } = props;
 
-    const textClassBase = `${inter.className} text-text-main font-semibold`;
+    const textClassBase = `  text-text-main font-semibold`;
 
     return (
       <div className={`${className} size-full`}>
@@ -42,9 +41,7 @@ export const ProductCard = React.forwardRef(
                 />
                 <div className="size-full col-start-1 row-start-1 rounded-xl border-8 border-secondary" />
               </div>
-              <p
-                className={`${inter.className} text-text-main text-xl font-semibold`}
-              >
+              <p className={`  text-text-main text-xl font-semibold`}>
                 {`使用スキル： ${data.skills}`}
               </p>
               <div className="h-1 w-full rounded-full bg-secondary" />

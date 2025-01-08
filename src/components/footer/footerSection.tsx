@@ -1,5 +1,4 @@
 "use client";
-import { inter } from "@/app/layout";
 import React, { useState } from "react";
 
 export const Footer: React.FC = () => {
@@ -13,7 +12,7 @@ export const Footer: React.FC = () => {
           }`}
         >
           <button
-            className={`w-40 h-20 rounded-t-3xl bg-tertiary ${inter.className} pb-10 -mb-10 font-semibold text-text-main text-xl`}
+            className={`w-40 h-20 rounded-t-3xl bg-tertiary   pb-10 -mb-10 font-semibold text-text-main text-xl`}
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
             onPointerEnter={() => setSBPM(true)}
             onPointerLeave={() => setSBPM(false)}

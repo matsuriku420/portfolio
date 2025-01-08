@@ -1,6 +1,5 @@
 "use client";
 
-import { inter } from "@/app/layout";
 import React, { useState, useRef } from "react";
 import { SkillCard } from "./skillCard";
 import { OtherSkillsPanel } from "./otherSkillsPanel";
@@ -17,7 +16,7 @@ export const SkillsPanel: React.FC<{ className?: string }> = (props) => {
       <div className="flex flex-row">
         <div className="w-5 h-[72px] bg-primary ml-8 -mt-3" />
         <p
-          className={`${inter.className} font-extrabold text-4xl text-text-main h-fit mt-auto ml-4`}
+          className={`  font-extrabold text-4xl text-text-main h-fit mt-auto ml-4`}
         >
           Skills
         </p>
@@ -32,9 +31,7 @@ export const SkillsPanel: React.FC<{ className?: string }> = (props) => {
           onClick={() => setIsOpen(!isOpen)}
           className="flex flex-row gap-2 items-center ml-8"
         >
-          <p
-            className={`text-text-main ${inter.className} font-medium text-2xl`}
-          >
+          <p className={`text-text-main   font-medium text-2xl`}>
             Other Skills
           </p>
           <p

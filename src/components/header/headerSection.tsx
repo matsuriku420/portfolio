@@ -1,6 +1,5 @@
 "use client";
 
-import { inter, limeLight } from "@/app/layout";
 import { HeaderMenu } from "./parts/headerColorMenu";
 import { useState } from "react";
 
@@ -16,7 +15,7 @@ export const Header: React.FC<{ indexes: IndexItemProp[] }> = ({ indexes }) => {
       <div className="w-full h-fit bg-tertiary flex flex-row gap-4 sm:gap-8 lg:gap-12 items-center pl-5">
         <button
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-          className={`${limeLight.className} font-semibold text-5xl text-text-main hover:scale-125 hover:rotate-[370deg] transition-all duration-150`}
+          className={`font-limeLight font-semibold text-5xl text-text-main hover:scale-125 hover:rotate-[370deg] transition-all duration-150`}
         >
           R
         </button>
@@ -24,7 +23,7 @@ export const Header: React.FC<{ indexes: IndexItemProp[] }> = ({ indexes }) => {
           {indexes.map((data, index) => (
             <button
               key={index}
-              className={`${inter.className} font-semibold text-xl sm:text-2xl md:text-4xl text-text-main hover:translate-y-[10%] transition-all duration-100`}
+              className={` font-semibold text-xl sm:text-2xl md:text-4xl text-text-main hover:translate-y-[10%] transition-all duration-100`}
               onClick={() => {
                 data.divRef.current?.scrollIntoView({
                   behavior: "smooth",

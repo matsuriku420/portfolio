@@ -1,38 +1,38 @@
 //import type { Metadata } from "next";
 import {
-  Geist,
-  Geist_Mono,
+  //Geist,
+  //Geist_Mono,
   Inter,
   Limelight,
   Noto_Sans_JP,
 } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
+// const geistSans = Geist({
+//   variable: "--font-geist-sans",
+//   subsets: ["latin"],
+// });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+// const geistMono = Geist_Mono({
+//   variable: "--font-geist-mono",
+//   subsets: ["latin"],
+// });
 
-export const limeLight = Limelight({
+const limeLight = Limelight({
   variable: "--font-lime-light400",
   weight: "400",
   subsets: ["latin"],
   display: "swap",
 });
 
-export const inter = Inter({
+const inter = Inter({
   variable: "--font-inter500",
   weight: "500",
   subsets: ["latin"],
   display: "swap",
 });
 
-export const notoSansJP = Noto_Sans_JP({
+const notoSansJP = Noto_Sans_JP({
   variable: "--font-noto-sans-jp500",
   weight: "500",
   subsets: ["latin"],
@@ -57,7 +57,7 @@ export default function RootLayout({
       <title>{title}</title>
       <meta name="description" content={description} />
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${limeLight.variable} ${inter.variable} ${notoSansJP.variable} font-inter antialiased`}
       >
         {children}
       </body>
