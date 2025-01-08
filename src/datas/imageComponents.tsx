@@ -1,5 +1,7 @@
 import Image from "next/image";
 import React from "react";
+import { basePath } from "../../next.config";
+const BASE_PATH = basePath ?? "";
 
 export type RImageDatas = {
   src: string;
@@ -16,7 +18,7 @@ export const RImage: React.FC<{
   if (!data) return;
   return (
     <Image
-      src={data.src}
+      src={`${BASE_PATH}${data.src}`}
       alt={data.alt}
       width={data.width * scale}
       height={data.height * scale}
