@@ -1,5 +1,5 @@
-import { BASE_PATH } from "@/app/layout";
 import { TopLinkButton } from "@/components/top/parts/topLinkButton";
+import { BASE_PATH } from "@/datas/envVariables";
 import { WorksProps } from "@/datas/worksDatas";
 import React from "react";
 

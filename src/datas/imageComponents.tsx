@@ -1,6 +1,6 @@
-import { BASE_PATH } from "@/app/layout";
 import Image from "next/image";
 import React from "react";
+import { BASE_PATH } from "./envVariables";
 
 export type RImageDatas = {
   src: string;

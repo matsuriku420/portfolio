@@ -1,4 +1,4 @@
-import { BASE_PATH } from "@/app/layout";
+import { BASE_PATH } from "@/datas/envVariables";
 import Image from "next/image";
 
 export type skillProps = {
