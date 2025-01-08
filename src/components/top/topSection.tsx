@@ -19,13 +19,13 @@ export const TopSection: React.FC = () => {
         </p>
         <div className="flex flex-col md:flex-row gap-4 mt-[30px]">
           <TopLinkButton
-            label="仮置き(成果物DLページ予定)"
-            url="https://twitter.com/"
+            label="グループのTwitter(鍵付き)"
+            url="https://twitter.com/sabacansoldier"
             className="bg-quaternary text-text-main"
           />
           <TopLinkButton
-            label="仮置き(シアターページ予定)"
-            url="https://youtube.com/"
+            label="過去制作動画リスト(YouTube)"
+            url="https://youtube.com/playlist?list=PLuXTcyTYMSGRkn_xOQ88NFOFYczLQH3VO&si=FkBoVihk1gQCFhsE"
             className="bg-secondary text-text-third"
           />
         </div>
