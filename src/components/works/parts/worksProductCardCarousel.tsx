@@ -72,7 +72,7 @@ export const ProductCardCarousel: React.FC<props> = (props) => {
           </div>
         ))}
       </div>
-      <div className="flex flex-row items-center gap-12">
+      <div className="flex flex-row items-center gap-8 sm:gap-12">
         <button
           onClick={() => SetPageCount((old) => old - 1)}
           className={`${buttonClassName} ${
@@ -86,7 +86,7 @@ export const ProductCardCarousel: React.FC<props> = (props) => {
             className="rotate-180"
           />
         </button>
-        <div className="flex flex-row gap-8 items-center h-fit">
+        <div className="flex flex-row gap-5 sm:gap-8 items-center h-fit">
           {props.works.map((value, index) => (
             <button
               key={index}

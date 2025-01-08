@@ -19,7 +19,9 @@ export const ProductCard = React.forwardRef(
       <div className={`${className} size-full`}>
         <div className="flex flex-col gap-3 w-full max-w-[900px] lg:w-[900px] h-fit max-h-[750px] lg:h-[550px] items-center lg:items-start">
           <div className="flex flex-col gap-1 size-fit">
-            <p className={`${textClassBase} text-3xl lg:text-4xl mr-8`}>
+            <p
+              className={`${textClassBase} text-3xl lg:text-4xl mx-auto lg:mr-8 px-3 lg:p-0`}
+            >
               {data.title}
             </p>
             <div className="h-1 w-full rounded-full bg-secondary" />
