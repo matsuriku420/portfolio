@@ -12,7 +12,7 @@ export const Header: React.FC<{ indexes: IndexItemProp[] }> = ({ indexes }) => {
   const [menuOpen, SetMenuOpen] = useState(false);
   return (
     <div>
-      <div className="w-full h-fit bg-tertiary flex flex-row gap-4 sm:gap-8 lg:gap-12 items-center pl-5">
+      <div className="w-full h-fit bg-tertiary flex flex-row gap-0 sm:gap-8 lg:gap-12 items-center pl-2 sm:pl-5">
         <button
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
           className={`font-limeLight font-semibold text-5xl text-text-main hover:scale-125 hover:rotate-[370deg] transition-all duration-150`}
@@ -36,7 +36,7 @@ export const Header: React.FC<{ indexes: IndexItemProp[] }> = ({ indexes }) => {
           ))}
         </div>
         <button
-          className={`size-fit mr-3 sm:mr-5 flex flex-col hover:gap-3 ${
+          className={`absolute size-fit right-3 sm:right-5 flex flex-col hover:gap-3 ${
             menuOpen
               ? "rotate-90 scale-x-75 gap-2 sm:gap-4 hover:gap-3"
               : "hover:scale-x-75 gap-2"
